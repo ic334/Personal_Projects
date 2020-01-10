@@ -130,7 +130,8 @@ buildWall(topBound, bottomBound, leftBound, rightBound, isVertical)
 base.mainloop()
 
 #
-# NOTES:
-# NEED TO FIGURE OUT HOW TO GET A MOVING OBJECT ON THE GUI
-# NEED TO FIGURE OUT HOW TO INPUT ARGUMENTS LIKE -> "python randMazeGen.py -h 30 30"
+# FIGURE OUT HOW TO GET A MOVING OBJECT ON THE GUI
+#
+#
+# FIGURE OUT HOW TO INPUT ARGUMENTS LIKE "python randMazeGen.py -h 30 30"
 #
