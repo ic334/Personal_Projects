@@ -1,0 +1,21 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\deftab543
+\pard\tx543\pardeftab543\ri0\sl360\slmult1\partightenfactor0
+
+\f0\fs24 \cf0 Isaac Cervantes\
+Soul-Crushing Tic-Tac-Toe\
+\
+For my final assignment, I decided to make a Tic-Tac-Toe game. The main reason why I call it \'93Soul Crushing\'94 is because in the Single Player Mode of the program, the user can only tie or lose, but never win. Also, when you eventually give up and select the "Quit" option from the menu, the computer will smack its lips and call the user a "Quitter". I programmed a CPU which always goes first in the top left of the board and will make specific moves depending on what you, the user, does. The multiplayer game is a basic multiplayer version of Tic Tac Toe.\
+\
+Completing this project took a couple of stages. At first I started with a very simple tic-tac-toe game that didn't use any of the material from class. Later, I implemented the use of enums and switch statements. I continued to optimize the code by making numerous helper functions, to prevent repeated lines of code. Over time, I began to see that I needed more files to keep the objects organized. Although I decided to use a vector and C-Style array instead of enums for the menu, I found that enums would be helpful in the Grid class to help keep track of the moves that are made in the tic-tac-toe game. Especially with the Grid class, I had a lot of private variables and even more getters and setters that helped tremendously with the implementation of this project. One problem that I came across was trying to keep track of the previous moves. I decided to use an array to document the previous moves and produce an error and re-prompt the user if the user tries to use on of the previous moves.\
+\
+This program was first built using a Menu feature similar to what I have been working on for the semester. The text-based menu was built using a c-style array and a vector. The menu can understand the proper character inputs, but prints an error statement and re-prompts the user when an integer or unrecognized character is entered. Although the text-based menu accepts char inputs, while playing the game, the program only accepts integer inputs. I created a single player function and a multiplayer function that both reside in main.cpp. The main function has a switch statement that either calls the single player function, multiplayer function, or quits gracefully. \
+\
+At first, trying to code the computer's moves was difficult because of all the possibilities, but I created functions in the case class that helped me read the tic-tac-toe board and determine the best next move. The Case class has functions such as one which checks for a victory. The Grid class has functions more tailored for allocation of X\'92s and O\'92s. The program is very easy to read and follow, even without needing explicit instructions. \
+\
+Another problem that I faced was efficiency. This project had lots of repeating lines of code, and as a result I simply had to create extra functions which will pass certain parameters by reference instead of values. One example is the makeMove function. I implemented this function because I would call the same four lines of code over and over again. The makeMove function made my code much more reasonable. Inheritance also appears a couple times throughout the program. As a bonus, I implemented the makeMove function with pass by reference. Overall, I found this to be a fun final project to work on.\
+}
